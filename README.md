@@ -1,8 +1,7 @@
 # octan_pay
 
-Welcome to your new octan_pay project and to the internet computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
-
-To get started, you might want to explore the project directory structure and the default configuration file. Working with this project in your development environment will not affect any production deployment or identity tokens.
+Welcome to your new octan_pay project and to the internet computer development community. 
+Octan_pay is a payment tool written in Rust, help users use ckBTC tokens to pay for minting Octan Soulbound Token, a kind of Web3 Identity on ICP. Visit Octan Soulbound Token https://github.com/Octan-Labs/Octan-SoulBound-ICP
 
 To learn more before you start working with octan_pay, see the following documentation available online:
 
