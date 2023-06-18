@@ -1,0 +1,44 @@
+type Details = record {
+  description : text;
+  meta : text;
+};
+
+type Permissions = record {
+  can_get : vec principal;
+  can_verify : vec principal;
+};
+
+type CreateInvoiceArgs = record {
+  token_amount : nat;
+  details : opt Details;
+  permissions : opt Permissions
+};
+
+type Invoice__1 = record {
+  id: nat;
+  from: principal;
+  to: principal;
+  amount: nat;
+  details: opt Details;
+  permissions: opt Permissions;
+  verified_paid_at_time: opt nat;
+  paid: bool;
+ };
+
+
+type TransferResult = variant {
+  Ok: nat;
+  Err: text;
+};
+
+type VerifyInvoiceArgs = record {
+  invoice_id : nat;
+  details : opt Details;
+  permissions : opt Permissions
+};
+
+service : () -> {
+  create_invoice : (CreateInvoiceArgs) -> (Invoice__1);
+  transfer : () -> (TransferResult);
+  verify_invoice : (CreateInvoiceArgs) -> (Invoice__1);
+}

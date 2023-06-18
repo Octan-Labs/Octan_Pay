@@ -1,0 +1,30 @@
+{
+	"canisters": {
+		"octan_pay_backend": {
+			"candid": "src/octan_pay_backend/octan_pay_backend.did",
+			"package": "octan_pay_backend",
+			"type": "rust"
+		},
+		"octan_pay_frontend": {
+			"dependencies": ["octan_pay_backend"],
+			"frontend": {
+				"entrypoint": "src/octan_pay_frontend/src/index.html"
+			},
+			"source": ["src/octan_pay_frontend/assets", "dist/octan_pay_frontend/"],
+			"type": "assets"
+		},
+		"icrc1_token_ledger_canister_ex1": {
+			"type": "custom",
+			"wasm": "src/icrc1/ledger.wasm",
+			"candid": "src/icrc1/icrc1.did",
+			"build": ""
+		}
+	},
+	"defaults": {
+		"build": {
+			"args": "",
+			"packtool": ""
+		}
+	},
+	"version": 1
+}
