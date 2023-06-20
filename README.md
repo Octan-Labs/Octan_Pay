@@ -1,7 +1,8 @@
 # octan_pay
 
 Welcome to your new octan_pay project and to the internet computer development community. 
-Octan_pay is a payment tool written in Rust, help users use ckBTC tokens to pay for minting Octan Soulbound Token, a kind of Web3 Identity on ICP. Visit Octan Soulbound Token https://github.com/Octan-Labs/Octan-SoulBound-ICP
+Octan_pay is a payment tool written in Rust, help users use ckBTC tokens to pay for minting Octan Soulbound Token, a kind of Web3 Identity on ICP. Visit Octan Soulbound Token https://github.com/Octan-Labs/Octan-SoulBound-ICP  
+Visit Octan code demo on Youtube: https://youtu.be/nUUPJ-SRaSo
 
 To learn more before you start working with octan_pay, see the following documentation available online:
 
